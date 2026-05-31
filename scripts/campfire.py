@@ -2,7 +2,7 @@ from engine.run import start
 
 
 def main() -> None:
-    start("wave")
+    start("campfire")
 
 
 if __name__ == "__main__":

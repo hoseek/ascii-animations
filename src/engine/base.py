@@ -9,4 +9,5 @@ class Base(ABC):
         return w, h - 1
 
     @abstractmethod
-    def draw_frame(self, t: float) -> str: ...
+    def draw_frame(self, t: float) -> str:
+        ...

@@ -1,0 +1,10 @@
+from engine.fire.colors import CHARS, RESET, _LEVELS, DEFAULT_COLOR_TABLE as COLOR_TABLE
+
+HEAT_MEAN = 0.92
+HEAT_STD  = 0.08
+COOLING   = 1.8
+
+TURB_CHANCE = 0.15
+TURB_HEAT   = 0.5
+
+SIM_FPS = 25

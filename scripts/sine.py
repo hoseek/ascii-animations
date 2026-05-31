@@ -1,8 +1,8 @@
-from run import start
+from engine.run import start
 
 
 def main() -> None:
-    start("animations.sine")
+    start("sine")
 
 
 if __name__ == "__main__":

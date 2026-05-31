@@ -2,7 +2,7 @@ from engine.run import start
 
 
 def main() -> None:
-    start("wave")
+    start("firewall")
 
 
 if __name__ == "__main__":
