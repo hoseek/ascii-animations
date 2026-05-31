@@ -20,13 +20,3 @@ def draw_frame(t):
             row.append(char)
         lines.append("".join(row))
     return "\n".join(lines)
-
-
-def main() -> None:
-    from ascii_animation.run import start
-
-    start("ascii_animation.wave")
-
-
-if __name__ == "__main__":
-    main()

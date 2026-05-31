@@ -5,18 +5,22 @@ build-backend = "hatchling.build"
 [project]
 name = "ascii-animation"
 version = "0.1.0"
-requires-python = ">=3.13"
+requires-python = "==3.13.*"
 dependencies = []
 
 [project.scripts]
-wave = "ascii_animation.wave:main"
-sine = "ascii_animation.sine:main"
+wave = "scripts.wave:main"
+sine = "scripts.sine:main"
+
+[tool.hatch.build.targets.wheel]
+sources = {"src" = ""}
+packages = ["scripts"]
 
 [tool.ruff]
-src = ["src"]
+src = ["src", "scripts"]
 
 [tool.mypy]
-files = ["src"]
+files = ["src", "scripts"]
 
 [dependency-groups]
 dev = [

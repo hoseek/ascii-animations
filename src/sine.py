@@ -19,13 +19,3 @@ def draw_frame(t):
                 row.append(" ")
         lines.append("".join(row))
     return "\n".join(lines)
-
-
-def main() -> None:
-    from ascii_animation.run import start
-
-    start("ascii_animation.sine")
-
-
-if __name__ == "__main__":
-    main()
