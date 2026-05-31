@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ascii-animation"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+wave = "ascii_animation.wave:main"
+sine = "ascii_animation.sine:main"
+
+[tool.ruff]
+src = ["src"]
+
+[tool.mypy]
+files = ["src"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9",
+    "mypy>=1.15",
+    "pre-commit>=4.0",
+]
